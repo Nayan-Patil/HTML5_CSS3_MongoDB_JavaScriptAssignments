@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body{
+                background-color: slateblue;
+                padding: 0%;
+                margin: 0%;
+            }
+            #top{
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: 2fr 2fr 2fr  2fr;
+                background-color: mediumaquamarine;
+
+            }
+            #top a{
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                text-decoration: none;
+
+            }
+            #top a:hover{
+                background-color: blue;
+            }
+            #top input[type=submit]{
+                float: right;
+                margin-right: 10px;
+                color:red;
+            }
+            #top input[type=text]{
+                float: right;
+                margin-left: 100px;
+            }
+            .container{
+                display: grid;
+                grid-template-columns:1fr 1fr;
+                padding: 0%;
+                margin-bottom: -1%;
+                height: 400;
+            }
+            .container-1{
+                display: grid;
+            
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 1em;
+               background-color: burlywood;
+            }
+            .container-1 a{
+                text-decoration: none;
+                color:chartreuse;
+                text-align: center;
+                display: block;
+                font-size: 20px;
+                background-color:teal;
+                padding-top: 90px;
+            }
+            .container-3{
+                padding-bottom: 0%;
+                margin-bottom: -0.6%;
+            }
+            .wrapper{
+                background-color:rosybrown;
+                
+            }
+            .wrapper1{
+                
+                display: grid ;
+                grid-gap: 1em;
+                grid-template-columns: repeat(3,1fr);
+            }
+            .wrapper1 section{
+                background-color: cornflowerblue;
+            }
+            
+            .wrapper1 section img{
+                display: block;
+                width: 100%;
+            }
+            .wrapper1 section h3{
+                text-align: center;
+            }
+            
+
+            
+        </style>
+        <title>Restaurent</title>
+    </head>
+    <body>
+        <div id="top">
+            <a href="https://www.google.com/">Home</a>
+            <a href="https://www.google.com/">About Us</a>
+            <a href="https://www.google.com/">Contact</a>
+            <a href="https://www.google.com/">OrderOnline</a>
+            
+               </div>
+        <div class="container">
+            <div class="container-1">
+                <a href="https://www.google.com/">INDIAN</a>
+                <a href="https://www.google.com/">DESSERT</a>
+                <a href="https://www.google.com/">WINES</a>
+               <a href="https://www.google.com/">BEERS</a>
+                           
+            </div>
+            <div class="container-3">
+                <img src="/img/restaurent1.jpg" alt="">
+            </div>
+            
+        </div>
+        <div class="wrapper" >
+            <div>
+            <h1 style="text-align: center;">Special Dishes</h1>
+        </div>
+        <div class="wrapper1">
+           
+                <section>
+                    <h3>Panner Tikka  </h3>
+                    <img src="/img/pannertikka.jpg" alt="">
+                
+                </section>
+                
+                
+                <section>
+                    <h3>Biryani</h3>
+                    <img src="/img/biryani.jpg" alt="">
+                
+                </section>
+               
+                <section>
+                   <h3>Tikka</h3>
+                    <img src="/img/tikka.jpg" alt="">
+                
+                </section>
+                <section>
+                   <h3>Rasgulla</h3>
+                    <img src="/img/rasgulla.jpg" alt="">
+                
+                </section>
+                <section>
+                    <h3>Shrikhand</h3>
+                    <img src="/img/shrikhand.jpg" alt="">
+                
+                </section>
+                <section>
+                    <h3>Sandwich</h3>
+                    <img src="/img/sandwich.jpg" alt="">
+                
+                </section>
+                
+            </div>
+        </div>
+            
+        
+    </body>
+</html>

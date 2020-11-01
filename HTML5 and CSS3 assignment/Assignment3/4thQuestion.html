@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header{
+                background-color:darkslategray;
+              text-align: center;
+              height: 150px;
+              margin-top: -1.5%;
+              padding-top: 3em;
+
+            }
+            
+            #section1{
+                display: grid;
+            
+                grid-template-columns:2fr 1fr;
+                   }
+            #section1 .col1{
+                background-image: url("/img/coding4.jpg");
+                position: center;
+                background-size: cover;
+                opacity: 1;
+                background-repeat: no-repeat;
+                height: 450px;
+         
+
+            }
+            #section1 .col2{
+                padding-top: 5em;
+                text-align: center;
+                background-color: lightgreen;
+            }
+            
+            
+            #submit{
+                margin-top: 20px;
+                margin-left: 100px;
+                font-size: 20px;
+                background-color: green;
+            }
+            .section2{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 1em;
+                padding: 1em;
+                background-color:darkslateblue;
+            }
+            .section2 h2{
+                text-align: center;
+            }
+            .section2 p{
+                padding: 1em;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .section2 >:nth-child(odd){
+                background-color:darkseagreen;
+            }
+            .section2 >:nth-child(even){
+                background-color: darkolivegreen;
+            }
+            .section3{
+                
+                background-color:darkslategray;
+                display: grid;
+                margin-bottom: -20%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10em;
+                
+                padding-left: 2em;
+                grid-auto-rows: minmax(100px, auto);
+            }
+            #info{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: flex-start;
+            }
+            #lang{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: flex-start;
+            }
+            #sub{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: flex-start;
+            }
+            a{
+                color:grey;
+                text-decoration: none;
+                background-color: initial;
+            }
+            
+            body{
+                background-color:linen;
+                margin-left:0%;
+                margin-right: 0%;
+                height: auto;
+                
+            }
+            
+        </style>
+        <title>Coding Hub</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Coding HUB</h1>
+                    <h3>Lorem ipsum dolor dolorum id, molestiae, culpa suscipit totam quia ex eius consectetur alias distinctio ad corporis minus? Est, veniam dolorum?</h3>
+                
+            </div>
+        </header>
+        <main id="main">
+            <section id="section1">
+                <div class="col1"><p>Learn Coding, Free</p>
+                </div>
+                <div class="col2">
+                    <form >
+                        <h2>Sign UP for learning</h2>
+                        <label for="Name">Name:
+                            <input type="text" name="Name" id="Name" placeholder="Enter your name" required>
+                        </label>
+                        <br><br>
+                        <label for="Email">Email:
+                            <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
+                        </label>
+                        <br><br>
+                        <label for="password">Password:
+                            <input type="password" name="password" id="password" required>
+                        </label>
+                        <br><br>
+                        <label for="Submit">
+                            <input type="submit" name="submit" id="submit" value="submit">
+                        </label>
+                    </form>
+           
+
+                </div>
+                     </section>
+                     <section class="section2">
+                        <div>
+                            <h2>HTML</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusamus ad fuga deleniti, iure ab alias neque architecto sint vero perspiciatis quidem maiores aliquid minima debitis a doloribus. Consequuntur, animi.</p>
+                        </div>
+                        <div>
+                            <h2>JAVA</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere maiores repudiandae, dicta beatae itaque aperiam soluta voluptatibus accusantium praesentium cumque modi amet quibusdam eius ea laborum? Libero, iusto praesentium.</p>
+                        </div>
+                        <div>
+                            <h2>PYTHON</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est hic voluptatem nisi, rerum mollitia aspernatur iusto id enim vel ad itaque, consequatur nemo perferendis soluta modi quo. Eveniet, quam fugit!</p>
+                        </div>    
+                    </section>
+                    <section class="section3">
+                       
+                       
+                        <div id="info">
+                            <h3>Information</h3>
+                            
+                                <a href="https://www.google.com/">About Us</a>
+                                <a href="https://www.google.com/">Partners</a>
+                                <a href="https://www.google.com/">Contact</a>
+                                <a href="https://www.google.com/">Career</a>
+                            
+                        </div>
+                        <div id="lang">
+                            <h3>Languages</h3>
+                            
+                                <a href="https://www.google.com/">JAVA</a>
+                                <a href="https://www.google.com/">C++</a>
+                                <a href="https://www.google.com/">PYTHON</a>
+                                <a href="https://www.google.com/">HTML</a>
+                            
+                        </div>
+                        <div id="sub">
+                            <h3>Subjects</h3>
+                            
+                                <a href="https://www.google.com/">Web Development</a>
+                                <a href="https://www.google.com/">Data Science</a>
+                                <a href="https://www.google.com/">Computer Science</a>
+                                <a href="https://www.google.com/">Machine Learning</a>
+                           
+                            
+                        </div>
+                       
+                    
+                    </section>
+        </main>
+    
+        
+    </body>
+</html>

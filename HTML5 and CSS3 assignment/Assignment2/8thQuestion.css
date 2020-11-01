@@ -1,0 +1,19 @@
+#First{
+    background-color: lightcyan;
+
+    border: 6px solid black;
+}
+#Second{
+    background-color: lightcyan;
+
+    border: 4px solid black;
+}
+#Third{
+    background-color: lightcyan;
+
+    border: 1px solid black;
+}
+#Fourth{
+    background-color: lightcyan;
+    border: 1px none white;
+}
