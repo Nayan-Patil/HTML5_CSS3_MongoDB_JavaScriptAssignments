@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A1Q17</title>
+    </head>
+    <body>
+        <h3>Question: Write a function that returns the largest element in a list. </h3>
+        <script>
+           
+
+           var myList=[1,34,192,11,223,281,76];
+            function largestElement(){
+            var max=0;
+            for(i=0;i<myList.length;i++){
+                if(myList[i]>max){
+                    max= myList[i];
+                }
+                else{
+                    max=max;
+                }
+            
+            }
+            return max;
+            }console.log(largestElement(myList));
+        </script>
+    </body>
+</html>

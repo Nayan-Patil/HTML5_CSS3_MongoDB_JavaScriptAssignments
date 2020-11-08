@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A1Q4</title>
+    </head>
+    <body>
+        <h3>Question: Write a function that returns the number of times you have to roll a die to get a 6.
+            (Minor hint: compare Math.random() to 5/6).
+            </h3>
+        <script>
+           function numRollsToGetSix(){
+            var count=0;
+            while(diceNumber!==6){
+        var diceNumber=Math.floor(Math.random()* (6-1+1))+1;
+        count++;
+            }
+            return count;
+        }
+        console.log(numRollsToGetSix());
+
+
+        </script>
+    </body>
+</html>

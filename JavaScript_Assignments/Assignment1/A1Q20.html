@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A1Q20</title>
+    </head>
+    <body>
+        <h3>Question:  Write a function that checks whether an element occurs in a list. </h3>
+        <script>
+           
+
+           var myList=["John","Jimmy", "Kane", "David"];
+            function checkElement(element){
+                var count=0;
+                for(i=0;i<myList.length;i++){
+                    if(myList[i]==element){
+                        count++;
+                    }
+                    else{
+                        count=count;
+                    }
+                }
+                if(count==0){
+                    return element+ " is not present in list";
+                }
+                else{
+                    return element+ " is present in list";
+                }
+            }
+            console.log(checkElement("nayan"));
+
+
+
+        </script>
+    </body>
+</html>

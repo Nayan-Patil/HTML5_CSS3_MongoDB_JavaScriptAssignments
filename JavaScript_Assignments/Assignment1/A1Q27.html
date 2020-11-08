@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A1Q27</title>
+    </head>
+    <body>
+        <h3>Question:      Implement binary search.     
+        </h3>
+        <script>
+           
+
+           var myArray=[1,21,3,7,9,20];
+            function binarySearch(n)
+            {
+                var start=0;
+                var end=myArray.length - 1;
+                var position= -1;
+                var detected= false;
+                var mid;
+
+                while(detected === false && start <= end)
+                {
+                    mid=Math.floor((start+end)/2);
+                if(myArray[mid]== n)
+                {
+                    detected=true;
+                    position=mid;
+                }
+                else if(myArray[mid] > n)
+                {
+                    end = mid-1;
+                }
+                else{
+                    start=mid+1;
+                }
+                }
+                console.log(position);
+            }
+
+
+        </script>
+    </body>
+</html>

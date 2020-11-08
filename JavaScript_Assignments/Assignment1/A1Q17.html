@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A1Q17</title>
+    </head>
+    <body>
+        <h3>Question: Write a program that prints all prime numbers. (Note: if your programming
+            language does not support arbitrary size numbers, printing all primes up to
+            the largest number you can easily represent is fine too.) </h3>
+        <script>
+           
+
+           var number=parseInt(prompt("Enter the number to check"));
+            var isPrime=true;
+
+            if(number==1)
+            {
+                console.log("!is neither prime nor composite number");
+            }
+            else if(number>1)
+            {
+                for(i=2;i<number;i++)
+                {
+                
+                if(number%i==0)
+                {
+                    isPrime=false;
+                    break;
+                }  
+                }
+            if(isPrime)
+            {
+                console.log(`${number} is a prime number`);
+            }
+            else{
+                console.log(`${number} not a prime number`);
+            }
+                
+            }
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A1Q26</title>
+    </head>
+    <body>
+        <h3>Question:     Implement the following sorting algorithms: Selection sort, Insertion sort.    
+        </h3>
+        <script>
+           
+
+           //Selection Sort Ascending Order
+                    var myArray=[2,4,3,1,0];
+                    function selectSort()
+                    { 
+                        for(i=0;i<=myArray.length-2;i++)
+                        {
+                            var minNum=i;
+                            for(j=i+1;j<=myArray.length-1;j++)
+                            {
+                            if(myArray[j]< myArray[i])
+                            {
+                                minNum=j;
+
+                                var temporary=myArray[minNum];
+                                myArray[minNum]=myArray[i];
+                                myArray[i]=temporary;
+                            }
+                            }
+                        }
+                        return myArray;
+                    
+                    }
+                    console.log("Here is the ascending order using sorting algorithm");
+                    console.log(selectSort());
+                    //Selection Sort Descending Order
+                    function selectSort2()
+                    { 
+                        for(i=0;i<=myArray.length-2;i++)
+                        {
+                            var maxNum=i;
+                            for(j=i+1;j<=myArray.length-1;j++)
+                            {
+                            if(myArray[j] > myArray[i])
+                            {
+                                maxNum=j;
+
+                                var temporary=myArray[maxNum];
+                                myArray[maxNum]=myArray[i];
+                                myArray[i]=temporary;
+                            }
+                            }
+                        }
+                        return myArray;
+                    
+                    }
+                    console.log("Here is the descending order using sorting algorithm");
+                    console.log(selectSort2());
+
+//insertion Sort
+                    function insertionSort() {
+                        n = myArray.length;
+                            for ( i = 1; i < n; i++) {
+                                
+                            var current = myArray[i];
+                            
+                            var j = i-1; 
+                                while ((j > -1) && (current < myArray[j])) {
+                                    myArray[j+1] = myArray[j];
+                                    j--;
+                                }
+                                myArray[j+1] = current;
+                            }
+                        return myArray;
+                    }
+                    console.log("Here is the ascending order using insertion algorithm");
+                    console.log(insertionSort());
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A1Q31</title>
+    </head>
+    <body>
+        <h3>Question:  Write a program that asks the user for a number n and gives them the
+            possibility to choose between computing the sum and computing the PRODUCT of 1,....,n.
+             
+        </h3>
+        <script>
+           
+
+           var n=window.prompt("Enter a number");
+            var choice=window.prompt("Enter your choice for sum 1 or for product 2");
+            var sum=0;
+            var product=1;
+            for(i=1;i<=n;i++){
+                if(choice==1){
+                    sum=sum+i;
+                }
+                else if(choice==2){
+                    product=product*i;
+                }
+                
+            }
+            if(choice==1){
+            console.log("Sum of "+n+" numbers is "+sum);
+            }
+            else{
+                console.log("Product of "+n+" numbers is "+product)
+            }
+
+
+
+        </script>
+    </body>
+</html>
